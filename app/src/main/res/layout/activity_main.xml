@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C0202"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/left_column"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="3dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/austria"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/austria_red_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_button"
+                    android:clickable="false"
+                    android:gravity="center_horizontal"
+                    android:textSize="0sp"
+                    app:backgroundTint="#BF0000"
+                    tools:text="button" />
+
+                <Button
+                    android:id="@+id/austria_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_button"
+                    android:clickable="false"
+                    android:gravity="center_horizontal"
+                    android:textSize="0sp"
+                    app:backgroundTint="#FFFFFF"
+                    tools:text="button" />
+
+                <Button
+                    android:id="@+id/austria_red_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_button"
+                    android:clickable="false"
+                    android:gravity="center_horizontal"
+                    android:textSize="0sp"
+                    app:backgroundTint="#BF0000"
+                    tools:text="button" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/italy"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/italy_green"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button"
+                    android:clickable="false"
+                    android:textSize="0sp"
+                    app:backgroundTint="#268A02"
+                    tools:text="button" />
+
+                <Button
+                    android:id="@+id/italy_white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button"
+                    android:clickable="false"
+                    android:textSize="0sp"
+                    app:backgroundTint="#FFFFFF"
+                    tools:text="button" />
+
+                <Button
+                    android:id="@+id/italy_red"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_button"
+                    android:clickable="false"
+                    android:textSize="0sp"
+                    app:backgroundTint="#BF0000"
+                    tools:text="button" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/madagascar"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/madagascar_white"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:background="@drawable/custom_button"
+                    android:clickable="false"
+                    android:gravity="center_horizontal"
+                    android:textSize="0sp"
+                    app:backgroundTint="#FFFFFF"
+                    tools:text="button" />
+
+                <LinearLayout
+                    android:id="@+id/madagascar_right"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="0.75"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/madagascar_red"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/custom_button"
+                        android:clickable="false"
+                        android:gravity="center_horizontal"
+                        android:textSize="0sp"
+                        app:backgroundTint="#BF0000"
+                        tools:text="button" />
+
+                    <Button
+                        android:id="@+id/madagascar_green"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/custom_button"
+                        android:clickable="false"
+                        android:gravity="center_horizontal"
+                        android:textSize="0sp"
+                        app:backgroundTint="#268A02"
+                        tools:text="button" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/denmark"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/denmark_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/denmark_red_top_right"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/custom_button"
+                        android:clickable="false"
+                        android:gravity="center_horizontal"
+                        android:textSize="0sp"
+                        app:backgroundTint="#BF0000"
+                        tools:text="button" />
+
+                    <Button
+                        android:id="@+id/denmark_white_top"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.10"
+                        android:background="@drawable/custom_button"
+                        android:clickable="false"
+                        android:gravity="center_horizontal"
+                        android:textSize="0sp"
+                        app:backgroundTint="#FFFFFF"
+                        tools:text="button" />
+
+                    <Button
+                        android:id="@+id/denmark_red_top_left"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/custom_button"
+                        android:clickable="false"
+                        android:gravity="center_horizontal"
+                        android:textSize="0sp"
+                        app:backgroundTint="#BF0000"
+                        tools:text="button" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/denmark_white_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="@drawable/custom_button"
+                    android:clickable="false"
+                    android:gravity="center_horizontal"
+                    android:textSize="0sp"
+                    app:backgroundTint="#FFFFFF"
+                    tools:text="button" />
+
+                <LinearLayout
+                    android:id="@+id/denmark_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/denmark_red_bottom_right"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:background="@drawable/custom_button"
+                        android:clickable="false"
+                        android:gravity="center_horizontal"
+                        android:textSize="0sp"
+                        app:backgroundTint="#BF0000"
+                        tools:text="button" />
+
+                    <Button
+                        android:id="@+id/denmark_bottom_top"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.1"
+                        android:background="@drawable/custom_button"
+                        android:clickable="false"
+                        android:gravity="center_horizontal"
+                        android:textSize="0sp"
+                        app:backgroundTint="#FFFFFF"
+                        tools:text="button" />
+
+                    <Button
+                        android:id="@+id/denmark_red_bottom_left"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:background="@drawable/custom_button"
+                        android:clickable="false"
+                        android:gravity="center_horizontal"
+                        android:textSize="0sp"
+                        app:backgroundTint="#BF0000"
+                        tools:text="button" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/right_column"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="6dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/poland"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/poland_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/custom_button"
+                    android:clickable="false"
+                    android:gravity="center_horizontal"
+                    android:textSize="0sp"
+                    app:backgroundTint="#FFFFFF"
+                    tools:text="button" />
+
+                <Button
+                    android:id="@+id/poland_red"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/custom_button"
+                    android:clickable="false"
+                    android:gravity="center_horizontal"
+                    android:textSize="0sp"
+                    app:backgroundTint="#BF0000"
+                    tools:text="button" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/colombia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/colombia_yellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@drawable/custom_button"
+                    android:clickable="false"
+                    android:gravity="center_horizontal"
+                    android:textSize="0sp"
+                    app:backgroundTint="#FFEB3B"
+                    tools:text="button" />
+
+                <Button
+                    android:id="@+id/colombia_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/custom_button"
+                    android:clickable="false"
+                    android:gravity="center_horizontal"
+                    android:textSize="0sp"
+                    app:backgroundTint="#3F51B5"
+                    tools:text="button" />
+
+                <Button
+                    android:id="@+id/colombia_red"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/custom_button"
+                    android:clickable="false"
+                    android:gravity="center_horizontal"
+                    android:textSize="0sp"
+                    app:backgroundTint="#BF0000"
+                    tools:text="button" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/thailand"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/thailand_red_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@drawable/custom_button"
+                    android:clickable="false"
+                    android:gravity="center_horizontal"
+                    android:textSize="0sp"
+                    app:backgroundTint="#BF0000"
+                    app:strokeColor="#190D0D"
+                    tools:text="button" />
+
+                <Button
+                    android:id="@+id/thailand_white_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@drawable/custom_button"
+                    android:clickable="false"
+                    android:gravity="center_horizontal"
+                    android:textSize="0sp"
+                    app:backgroundTint="#FFFFFF"
+                    app:strokeColor="#190D0D"
+                    tools:text="button" />
+
+                <Button
+                    android:id="@+id/thailand_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/custom_button"
+                    android:clickable="false"
+                    android:gravity="center_horizontal"
+                    android:textSize="0sp"
+                    app:backgroundTint="#3F51B5"
+                    app:strokeColor="#190D0D"
+                    tools:text="button" />
+
+                <Button
+                    android:id="@+id/thailand_white_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@drawable/custom_button"
+                    android:clickable="false"
+                    android:gravity="center_horizontal"
+                    android:textSize="0sp"
+                    app:backgroundTint="#FFFFFF"
+                    app:strokeColor="#190D0D"
+                    tools:text="button" />
+
+                <Button
+                    android:id="@+id/thailand_red_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="@drawable/custom_button"
+                    android:clickable="false"
+                    android:gravity="center_horizontal"
+                    android:textSize="0sp"
+                    app:backgroundTint="#BF0000"
+                    app:strokeColor="#190D0D"
+                    tools:text="button" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/switzerland"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:background="#BF0000"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/switzerland_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/switzerland_red_top_right"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.43"
+                        android:background="@drawable/custom_button"
+                        android:clickable="false"
+                        android:gravity="center_horizontal"
+                        android:textSize="0sp"
+                        app:backgroundTint="#BF0000"
+                        app:strokeColor="#190D0D"
+                        tools:text="button" />
+
+                    <Button
+                        android:id="@+id/switzerland_white_top"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="0.14"
+                        android:background="@drawable/custom_button"
+                        android:clickable="false"
+                        android:gravity="center_horizontal"
+                        android:textSize="0sp"
+                        app:backgroundTint="#FFFFFF"
+                        app:strokeColor="#190D0D"
+                        tools:text="button" />
+
+                    <Button
+                        android:id="@+id/switzerland_red_top_left"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.43"
+                        android:background="@drawable/custom_button"
+                        android:clickable="false"
+                        android:gravity="center_horizontal"
+                        android:textSize="0sp"
+                        app:backgroundTint="#BF0000"
+                        app:strokeColor="#190D0D"
+                        tools:text="button" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/switzerland_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="#BF0000"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/switzerland_red_center_right"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:background="@drawable/custom_button"
+                        android:clickable="false"
+                        android:gravity="center_horizontal"
+                        android:textSize="0sp"
+                        app:backgroundTint="#BF0000"
+                        app:strokeColor="#190D0D"
+                        tools:text="button" />
+
+                    <Button
+                        android:id="@+id/switzerland_white_center"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/custom_button"
+                        android:clickable="false"
+                        android:gravity="center_horizontal"
+                        android:textSize="0sp"
+                        app:backgroundTint="#FFFFFF"
+                        app:strokeColor="#190D0D"
+                        tools:text="button" />
+
+                    <Button
+                        android:id="@+id/switzerland_red_center_left"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:background="@drawable/custom_button"
+                        android:clickable="false"
+                        android:gravity="center_horizontal"
+                        android:textSize="0sp"
+                        app:backgroundTint="#BF0000"
+                        app:strokeColor="#190D0D"
+                        tools:text="button" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/switzerland_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/switzerland_red_bottom_right"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.43"
+                        android:background="@drawable/custom_button"
+                        android:clickable="false"
+                        android:gravity="center_horizontal"
+                        android:textSize="0sp"
+                        app:backgroundTint="#BF0000"
+                        app:strokeColor="#190D0D"
+                        tools:text="button" />
+
+                    <Button
+                        android:id="@+id/switzerland_white_bottom"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="top"
+                        android:layout_weight="0.14"
+                        android:background="@drawable/custom_button"
+                        android:clickable="false"
+                        android:gravity="center_horizontal"
+                        android:textSize="0sp"
+                        app:backgroundTint="#FFFFFF"
+                        app:strokeColor="#190D0D"
+                        tools:text="button" />
+
+                    <Button
+                        android:id="@+id/switzerland_red_bottom_left"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.43"
+                        android:background="@drawable/custom_button"
+                        android:clickable="false"
+                        android:gravity="center_horizontal"
+                        android:textSize="0sp"
+                        app:backgroundTint="#BF0000"
+                        app:strokeColor="#190D0D"
+                        tools:text="button" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
