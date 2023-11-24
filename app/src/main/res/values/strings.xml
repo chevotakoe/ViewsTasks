@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ViewsTasks</string>
+    <string name="provided_pic_description">Picture obtained from link</string>
+    <string name="pic_link_hint">Please input link here</string>
 </resources>
