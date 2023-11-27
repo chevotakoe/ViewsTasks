@@ -4,41 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#272A61"
+    android:background="#3C6BAA"
     android:baselineAligned="false"
     android:orientation="horizontal"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/providedPicture"
-        android:layout_width="175dp"
-        android:layout_height="187dp"
-        android:background="#9F98A6D3"
-        android:contentDescription="@string/provided_pic_description"
-        app:layout_constraintBottom_toTopOf="@+id/picturePath"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <EditText
-        android:id="@+id/picturePath"
-        android:layout_width="247dp"
-        android:layout_height="65dp"
-        android:autofillHints="link"
-        android:background="@drawable/custom_edittext"
-        android:backgroundTint="#9F98A6D3"
-        android:ems="10"
-        android:gravity="center"
-        android:hint="@string/pic_link_hint"
-        android:inputType="text"
-        android:textColor="#FFFFFF"
-        android:textColorHint="@color/white"
+    <com.project.viewstasks.ClockView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.737" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
